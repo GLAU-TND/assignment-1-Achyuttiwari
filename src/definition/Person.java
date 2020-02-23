@@ -1,0 +1,49 @@
+package definition;
+
+import java.util.ArrayList;
+
+public class Person implements Comparable<Person>{
+    private String firstName;
+    private String lastName;
+    private String emailAddress;
+
+    public int compareTo(Person other) {
+        return firstName.compareTo(other.firstName);
+    }
+
+    private ArrayList<String> contactNumbers = new ArrayList<>();
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public ArrayList<String> getContactNumbers() {
+        return contactNumbers;
+    }
+
+    public void setContactNumbers(String number) {
+        contactNumbers.add(number);
+    }
+}
